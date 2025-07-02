@@ -16,12 +16,19 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  background: repeating-linear-gradient(
+    45deg,
+    #1f1f1f,
+    #1f1f1f 10px,
+    #2a2a2a 10px,
+    #2a2a2a 20px
+  );
 }
 
 header {
