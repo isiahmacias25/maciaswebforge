@@ -21,9 +21,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: url('../Photos/background.png') no-repeat center center fixed;
-  background-size: cover;
 
+  background: repeating-linear-gradient(
+    45deg,
+    #1f1f1f,
+    #1f1f1f 10px,
+    #2a2a2a 10px,
+    #2a2a2a 20px
+  );
 }
 
 header {
