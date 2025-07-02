@@ -45,21 +45,29 @@ header h1 {
   letter-spacing: 2px;
 }
 
-nav {
-  margin-top: 1rem;
-}
+ nav ul li a {
+        color: #222;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 8%;
+    }
 
-nav a {
-  margin: 0 1rem;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
-}
+        nav ul li a:visited {
+            color: #222;
+        }
 
-nav a:hover {
-  color: var(--hover);
-}
+        nav ul li a:hover {
+            background-color: #222;
+            color: white;
+        }
+
+        nav ul li a:focus {
+            outline: thin dotted;
+        }
+
+        nav ul li a:hover, nav ul li a:active {
+            outline: 0;
+        }
 
 main {
   flex: 1;
