@@ -1,1 +1,11 @@
-
+.exploreBtn {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
