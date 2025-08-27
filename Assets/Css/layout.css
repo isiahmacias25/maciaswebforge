@@ -70,10 +70,10 @@ nav ul li a {
 }
 nav {
 	display: table;
-	width: 96%;
+	width: 75%;
 	margin: 0 auto;
 	float: none;
-	background-color:#000000
+	background-color:#000000;
 	margin-bottom: 15px; 
 }
 nav ul {
@@ -88,7 +88,6 @@ main {
   flex: 1;
   padding: 2rem;
   max-width: 1000px;
-  margin: 3rem auto;
 }
 
 footer {
