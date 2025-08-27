@@ -45,29 +45,31 @@ header h1 {
   letter-spacing: 2px;
 }
 
- nav ul li a {
-        color: #222;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 8%;
-    }
+ nav {
+	width: 25%;
+	float: left;
+	margin: 6% 2% 0% 0%;
+}
 
-        nav ul li a:visited {
-            color: #222;
-        }
-
-        nav ul li a:hover {
-            background-color: #222;
-            color: white;
-        }
-
-        nav ul li a:focus {
-            outline: thin dotted;
-        }
-
-        nav ul li a:hover, nav ul li a:active {
-            outline: 0;
-        }
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8%;
+}
+nav ul li a:visited {
+	color: #222;
+}
+nav ul li a:hover {
+	background-color: #222;
+	color: white;
+}
+nav ul li a:focus {
+	outline: thin dotted;
+}
+nav ul li a:hover, nav ul li a:active {
+	outline: 0;
+}
 
 main {
   flex: 1;
