@@ -49,6 +49,7 @@ header h1 {
 	width: 25%;
 	float: left;
 	margin: 6% 2% 0% 0%;
+	background-color:#000000
 }
 
 nav ul li a {
@@ -57,12 +58,10 @@ nav ul li a {
 	display: block;
 	margin-bottom: 8%;
 }
-nav ul li a:visited {
-	color: #222;
-}
+
 nav ul li a:hover {
-	background-color: #222;
-	color: white;
+	background-color: #00ff88;
+	color: #000000;
 }
 nav ul li a:focus {
 	outline: thin dotted;
