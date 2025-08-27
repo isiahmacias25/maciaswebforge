@@ -62,7 +62,7 @@ nav ul li {
 	width: 15%;
 	text-align: center;
 	margin-right: 2%;
-	border: thin solid rgba(127,96,17,1.00);
+	border: thin solid rgba(0 255 136);
 	border-collapse: collapse;
 }
 nav ul li a {
@@ -74,6 +74,7 @@ nav {
 	margin: 0 auto;
 	float: none;
 	background-color:#000000
+	margin-bottom: 15px; 
 }
 nav ul {
 	display: table-row;
