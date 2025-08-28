@@ -100,3 +100,78 @@ footer {
   border-top: 2px solid var(--accent);
   margin-top: auto;
 }
+
+/* === Nav Banner Base === */
+.navBanner {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 20px auto;
+  background-color: #000000; /* black base */
+  padding: 1rem 2rem;         /* spacing around nav */
+  border-radius: 8px;         /* soft corners on rectangle */
+  box-shadow: inset 0 0 20px rgba(0, 255, 136, 0.3); /* green inner glow */
+  text-align: center;
+  overflow: visible;
+}
+
+/* === Curled ends using pseudo-elements === */
+.navBanner::before,
+.navBanner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: #000000; /* match banner */
+  border-radius: 50%;         /* makes half-circle for curl */
+  transform: translateY(-50%);
+  box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.4); /* green inner shading */
+}
+
+/* Left curl */
+.navBanner::before {
+  left: -1rem;
+}
+
+/* Right curl */
+.navBanner::after {
+  right: -1rem;
+}
+
+/* === Nav table inside banner === */
+.navBanner nav {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+/* Table row for cells */
+.navBanner nav ul {
+  display: table-row;
+}
+
+/* Nav boxes / cells */
+.navBanner nav ul li {
+  display: table-cell;
+  width: 15%;
+  text-align: center;
+  border: thin solid rgba(0, 255, 136, 0.5); /* subtle green edge */
+  border-collapse: collapse;
+  padding: 0.5rem 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect on nav items */
+.navBanner nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+.navBanner nav ul li a:hover {
+  background-color: #00ff88;
+  color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ff88;
+}
