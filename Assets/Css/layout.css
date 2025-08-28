@@ -70,7 +70,6 @@ nav ul li a {
 }
 nav {
 	display: table;
-	width: 75%;
 	margin: 0 auto;
 	float: none;
 	background-color:#000000;
@@ -87,7 +86,6 @@ nav ul li:last-of-type {
 main {
   flex: 1;
   padding: 2rem;
-  max-width: 1000px;
   margin: 3rem;
 }
 
