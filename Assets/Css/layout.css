@@ -55,6 +55,9 @@ nav ul li a {
 nav ul li a:hover {
 	background-color: #00ff88;
 	color: #000000;
+	box-shadow: 0 0 10px var(--accent);
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 
 nav ul li {
