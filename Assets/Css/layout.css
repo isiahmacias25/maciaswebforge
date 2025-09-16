@@ -175,3 +175,29 @@ footer {
   box-shadow: 0 0 10px #00ff88;
 }
 
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: var(--card-bg);
+  border-top: 2px solid var(--accent);
+  margin-top: auto;
+}
+
+.site-footer .brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.site-footer .tagline {
+  font-style: italic;
+  margin: 5px 0;
+  color: #bbb;
+}
+
+.site-footer .copy {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #777;
+}
