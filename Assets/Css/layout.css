@@ -176,7 +176,6 @@ footer {
 }
 
 .site-footer {
-  text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
   background-color: var(--card-bg);
@@ -184,10 +183,9 @@ footer {
   margin-top: auto;
 }
 
-/* NEW inner layout */
 .footer-inner {
   display: flex;
-  justify-content: space-between;  /* text left, image right */
+  justify-content: space-between;  /* pushes text left, logo right */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -195,7 +193,11 @@ footer {
 }
 
 .footer-text {
-  text-align: left;  /* keep text aligned left */
+  text-align: left;  /* keep the text aligned left */
+}
+
+.footer-logo {
+  text-align: right; /* make sure logo hugs the right side */
 }
 
 .footer-logo img {
