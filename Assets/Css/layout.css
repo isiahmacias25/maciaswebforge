@@ -184,20 +184,40 @@ footer {
   margin-top: auto;
 }
 
+/* NEW inner layout */
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* text left, image right */
   align-items: center;
-  max-width: 1200px;   /* centers it on big screens */
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 2rem;           /* breathing room between text and logo */
+  gap: 2rem;
 }
 
 .footer-text {
-  text-align: left;
+  text-align: left;  /* keep text aligned left */
 }
 
 .footer-logo img {
   max-height: 60px;
   width: auto;
+}
+
+/* keep your original text styles */
+.site-footer .brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.site-footer .tagline {
+  font-style: italic;
+  margin: 5px 0;
+  color: #bbb;
+}
+
+.site-footer .copy {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #777;
 }
