@@ -89,6 +89,7 @@ nav ul li:last-of-type {
 main {
   flex: 1;
   padding: 2rem;
+  padding-top: 0px;
   margin: 3rem;
   text-align: center;
 }
