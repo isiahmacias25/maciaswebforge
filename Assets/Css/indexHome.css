@@ -42,6 +42,10 @@ h2 {
   text-align: left;
 }
 
+.packageTileCollection {
+  display: inline-block;
+}
+
 .packageTile {
   border-radius: 20%;
   border: 5px solid #ffffff;
