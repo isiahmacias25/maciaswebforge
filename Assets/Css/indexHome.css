@@ -41,3 +41,9 @@ h2 {
 .homeContent{
   text-align: left;
 }
+
+.packageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: #000
+}
