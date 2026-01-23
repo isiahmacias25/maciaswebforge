@@ -43,7 +43,10 @@ h2 {
 }
 
 .packageTileCollection {
-  display: inline-block;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .packageTile {
