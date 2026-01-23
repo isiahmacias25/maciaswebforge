@@ -33,7 +33,7 @@ const packageData = {
       <p>Includes DNS configuration and launch-ready setup.</p>
       <p>No website included.</p>
       <p>$50 one-time payment plus all domain registration fees, including a 20% maintenance fee.</p>
-      <p><strong>100% down payment required.</strong></p>
+      <p>100% down payment required.</p>
     `
   },
 
@@ -44,7 +44,7 @@ const packageData = {
       <p>Domain registration and full setup handled for you.</p>
       <p>Includes DNS configuration and launch-ready setup.</p>
       <p>$250 one-time payment plus all domain registration fees, including a 20% maintenance fee.</p>
-      <p><strong>100% down payment required.</strong></p>
+      <p>100% down payment required.</p>
       <p>Best for advertising small services, such as babysitting or dog walking.</p>
     `
   },
@@ -56,7 +56,7 @@ const packageData = {
       <p>Domain registration and full setup handled for you.</p>
       <p>Includes DNS configuration and launch-ready setup.</p>
       <p>$500 one-time payment plus all domain registration fees, including a 20% maintenance fee.</p>
-      <p><strong>100% down payment required.</strong></p>
+      <p>100% down payment required.</p>
       <p>Best for small businesses.</p>
     `
   },
