@@ -45,3 +45,14 @@
   text-align: center;
   margin: 10px;
 }
+
+.comingSoonPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: ##c6c5c3;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  color: #000;
+}
