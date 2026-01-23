@@ -49,12 +49,3 @@ h2 {
   justify-content: center;
 }
 
-.packageTile {
-  border-radius: 20%;
-  border: 5px solid #ffffff;
-  background-color: #000;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  margin: 10px;
-}
