@@ -88,7 +88,10 @@
 }
 
 .modal {
-  background-color: #fff;
+  border: 5px solid #ffffff;
+  background-color: #000000;
+  text-align: center;
+  margin: 10px;
   padding: 25px 30px;
   border-radius: 12px;
   max-width: 500px;
@@ -97,7 +100,7 @@
   overflow-y: auto;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
   position: relative;
-  font-family: sans-serif;
+  font-family: sans-serif; 
 }
 
 .closeModal {
@@ -118,6 +121,14 @@
 }
 
 #modalContent p {
-  margin-bottom: 10px;
-  line-height: 1.5;
+  position: relative;
+  padding-left: 20px; 
+}
+
+#modalContent p::before {
+  content: "–"; 
+  position: absolute;
+  left: 0;
+  color: white;  
+  font-weight: bold;
 }
