@@ -1,0 +1,39 @@
+.ironPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: #8e8e8e;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.bronzePackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: #7c3d00;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.silverPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: #3b3b3b;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.customPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  background-color: #00ff88;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+}
