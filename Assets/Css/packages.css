@@ -7,6 +7,10 @@
 }
 
 .ironPackageTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20%;
   border: 5px solid #ffffff;
   background-color: #8e8e8e;
@@ -14,9 +18,15 @@
   height: 200px;
   text-align: center;
   margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .bronzePackageTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20%;
   border: 5px solid #ffffff;
   background-color: #7c3d00;
@@ -24,9 +34,15 @@
   height: 200px;
   text-align: center;
   margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .silverPackageTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20%;
   border: 5px solid #ffffff;
   background-color: #3b3b3b;
@@ -34,9 +50,15 @@
   height: 200px;
   text-align: center;
   margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .customPackageTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20%;
   border: 5px solid #ffffff;
   background-color: #037339;
@@ -44,9 +66,15 @@
   height: 200px;
   text-align: center;
   margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .comingSoonPackageTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20%;
   border: 10px solid #ffffff;
   background-color: #d5d5d5;
@@ -56,6 +84,7 @@
   margin: 10px;
   color: #000000;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 /* Popup Styles */
@@ -67,7 +96,14 @@
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease; /* added transform transition */
+  cursor: pointer;
+}
+
+/* Hover effect: lighter + small pop */
+.viewMoreBtn:hover {
+  background-color: #666;   /* slightly lighter gray */
+  transform: scale(1.05);   /* tiny pop/zoom */
 }
 
 .modalOverlay {
