@@ -48,11 +48,12 @@
 
 .comingSoonPackageTile {
   border-radius: 20%;
-  border: 5px solid #ffffff;
-  background-color: ##c6c5c3;
+  border: 10px solid #ffffff;
+  background-color: #d5d5d5;
   width: 200px;
   height: 200px;
   text-align: center;
   margin: 10px;
-  color: #000;
+  color: #000000;
+  padding: 15px;
 }
