@@ -234,4 +234,5 @@ nav ul li:last-of-type {
   background-color: #000000;
   text-align: left;
   margin-bottom: 50px;
+  border-radius: 12px;
 }
