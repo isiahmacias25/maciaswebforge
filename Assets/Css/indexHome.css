@@ -1,3 +1,4 @@
+/* Welcome Styles */
 .indexLogo {
   width: 150px;
   height: 150px;
@@ -22,6 +23,8 @@
   margin-top: 20px;
 }
 
+
+/* Home General Styles */
 .homeLogo {
   width: 250px;
   height: 250px;
@@ -33,19 +36,6 @@
   margin-bottom: 10px;
 }
 
-h2 {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
 .homeContent{
   text-align: left;
 }
-
-.packageTileCollection {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
