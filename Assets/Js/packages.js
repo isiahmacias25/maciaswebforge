@@ -40,7 +40,7 @@ const packageData = {
   bronze: {
     title: "Bronze Package",
     content: `
-      <p>One-page website with basic text and limited functionality.</p>
+      <p>One-page website with basic text and strongly limited functionality.</p>
       <p>Domain registration and full setup handled for you.</p>
       <p>Includes DNS configuration and launch-ready setup.</p>
       <p>$200 one-time payment plus all domain registration fees, including a 20% maintenance fee.</p>
@@ -52,7 +52,7 @@ const packageData = {
   silver: {
     title: "Silver Package",
     content: `
-      <p>Small website with several pages, navigation, and limited functionality.</p>
+      <p>Small website with several pages, navigation, and basic functionality.</p>
       <p>Domain registration and full setup handled for you.</p>
       <p>Includes DNS configuration and launch-ready setup.</p>
       <p>$500 one-time payment plus all domain registration fees, including a 20% maintenance fee.</p>
