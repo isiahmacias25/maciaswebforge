@@ -58,6 +58,16 @@ main {
   text-align: center;
 }
 
+.contentContainer {
+  background: rgb(255,255,255,0.6);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+
 /* Footer Styles */
 footer {
   text-align: center;
