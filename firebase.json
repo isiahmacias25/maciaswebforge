@@ -22,7 +22,11 @@
       {
         "source": "/contact",
         "destination": "/contact.html"
-      }
+      },
+       {
+        "source": "/qr",
+        "destination": "/qr.html"
+      },
     ]
   }
 }
