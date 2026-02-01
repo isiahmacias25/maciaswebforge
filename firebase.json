@@ -26,7 +26,7 @@
        {
         "source": "/qr",
         "destination": "/qr.html"
-      },
+      }
     ]
   }
 }
