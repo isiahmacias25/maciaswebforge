@@ -1,0 +1,99 @@
+/* Layout1 */
+
+
+/* Gloabal Styles */
+/* Font Styles */
+:root {
+    --bg: #0f0f0f;
+    --accent: #00ff88;
+    --text: #f5f5f5;
+    --card-bg: #1a1a1a;
+    --hover: #00ffaa;
+    --font-main: 'Inter', sans-serif;
+    --font-header: 'Orbitron', sans-serif;
+}
+
+/* Page Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Entire Visual Page Styles */
+/* Full Height of the Screen */
+body {
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: repeating-linear-gradient(
+        45deg,
+        #1f1f1f,
+        #1f1f1f 10px,
+        #2a2a2a 10px,
+        #2a2a2a 20px
+    );
+}
+
+
+/* Header Styles */
+/* Actual Header Section */
+header {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Header Title */
+header h1 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+
+/* Main Part of Content Styles */
+/* Space Between the Header and Footer */
+main {
+    flex: 1;
+    padding: 2rem;
+    padding-top: 0px;
+    margin: 3rem;
+    text-align: center;
+}
+
+
+/* Footer Styles */
+/* Actual Footer Section */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    background-color: var(--card-bg);
+    border-top: 2px solid var(--accent);
+    margin-top: auto;
+}
+
+/* Main Content of the Footer */
+.footer-Content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+/* Our Shoutout at the Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
