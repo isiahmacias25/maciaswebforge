@@ -97,3 +97,34 @@ footer {
     padding-top: 15px;
 }
 
+.footer-text {
+  text-align: left;  /* keep the text aligned left */
+}
+
+.footer-logo {
+  text-align: right; /* make sure logo hugs the right side */
+}
+
+.footer-logo img {
+  max-height: 100px;
+  width: auto;
+}
+
+/* keep your original text styles */
+.site-footer .brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.site-footer .tagline {
+  font-style: italic;
+  margin: 5px 0;
+  color: #bbb;
+}
+
+.site-footer .copy {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #777;
+}
