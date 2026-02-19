@@ -11,18 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
         yearElement.textContent = currentYear;
     }
 
-    // --------- Styled Favicon (Optimized for Tabs) ---------
+    // --------- PRO Favicon (Max Clarity Version) ---------
     function makeFaviconStyled(src) {
         const img = new Image();
+
+        // Prevent cross-origin issues if hosted elsewhere
+        img.crossOrigin = "anonymous";
         img.src = src;
 
         img.onload = () => {
-            const size = 64;
 
-            // Subtle accent values for favicon scale
-            const border = 2;          // thinner border
-            const shadowBlur = 4;      // smaller shadow
-            const shadowOffsetY = 2;
+            // Larger internal size → sharper downscaling in browser
+            const size = 128;
+
+            // Very subtle accent ring (optional)
+            const border = 2;
 
             const canvas = document.createElement("canvas");
             canvas.width = size;
@@ -31,36 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
             const ctx = canvas.getContext("2d");
 
             const center = size / 2;
-            const radius = center - shadowBlur;
+            const radius = center;
 
-            // ----- Shadow (subtle) -----
-            ctx.shadowColor = "rgba(0,0,0,0.25)";
-            ctx.shadowBlur = shadowBlur;
-            ctx.shadowOffsetX = 0;
-            ctx.shadowOffsetY = shadowOffsetY;
-
-            // Circle for shadow
-            ctx.beginPath();
-            ctx.arc(center, center, radius, 0, Math.PI * 2);
-            ctx.fillStyle = "transparent";
-            ctx.fill();
-
-            // Disable shadow for image + border
-            ctx.shadowColor = "transparent";
-
-            // ----- Clip image -----
+            // ----- Circular Clip (NO shrinking) -----
             ctx.save();
             ctx.beginPath();
             ctx.arc(center, center, radius - border, 0, Math.PI * 2);
             ctx.clip();
 
+            // Draw image FULL SIZE (no padding)
             ctx.drawImage(img, 0, 0, size, size);
 
             ctx.restore();
 
-            // ----- Subtle Border Accent -----
+            // ----- Clean Accent Ring -----
             ctx.lineWidth = border;
-            ctx.strokeStyle = "#ffffff";
+            ctx.strokeStyle = "#ffffff"; // change if you want
 
             ctx.beginPath();
             ctx.arc(center, center, radius - border / 2, 0, Math.PI * 2);
@@ -68,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Replace favicon
             const favicon = document.querySelector('link[rel="icon"]');
+
             if (favicon) {
                 favicon.href = canvas.toDataURL("image/png");
             }
@@ -76,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --------- Initialize Styled Favicon ---------
     const faviconLink = document.querySelector('link[rel="icon"]');
+
     if (faviconLink) {
         makeFaviconStyled(faviconLink.getAttribute("href"));
     }
