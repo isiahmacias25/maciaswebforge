@@ -11,39 +11,68 @@ document.addEventListener("DOMContentLoaded", function () {
         yearElement.textContent = currentYear; // update the text
     }
 
-    // --------- Make Favicon Circular ---------
-    function makeFaviconCircular(src) {
-        const img = new Image(); // create image object
-        img.src = src;
+// --------- Make Favicon Match .mainLogo Style ---------
+function makeFaviconStyled(src) {
+    const img = new Image();
+    img.src = src;
 
-        img.onload = () => {
-            const size = 64; // size of the favicon canvas
-            const canvas = document.createElement("canvas"); // create canvas
-            canvas.width = size;
-            canvas.height = size;
-            const ctx = canvas.getContext("2d");
+    img.onload = () => {
+        const size = 64;
+        const border = 4;           // same as CSS
+        const shadowBlur = 10;
+        const shadowOffsetY = 4;
 
-            // create circular clipping mask
-            ctx.beginPath();
-            ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-            ctx.closePath();
-            ctx.clip();
+        const canvas = document.createElement("canvas");
+        canvas.width = size + shadowBlur;
+        canvas.height = size + shadowBlur;
 
-            // draw the image inside the circle
-            ctx.drawImage(img, 0, 0, size, size);
+        const ctx = canvas.getContext("2d");
 
-            // replace the favicon href with the circular version
-            const favicon = document.querySelector('link[rel="icon"]');
-            if (favicon) {
-                favicon.href = canvas.toDataURL("image/png");
-            }
-        };
-    }
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = size / 2;
 
-    // initialize circular favicon using existing link
-    const faviconLink = document.querySelector('link[rel="icon"]');
-    if (faviconLink) {
-        makeFaviconCircular(faviconLink.getAttribute("href"));
-    }
+        // ----- Shadow (matches CSS box-shadow) -----
+        ctx.shadowColor = "rgba(0,0,0,0.2)";
+        ctx.shadowBlur = shadowBlur;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = shadowOffsetY;
 
-});
+        // Draw circular image
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+
+        ctx.drawImage(
+            img,
+            centerX - radius,
+            centerY - radius,
+            size,
+            size
+        );
+
+        ctx.restore?.();
+
+        // ----- Border (matches CSS border) -----
+        ctx.shadowColor = "transparent"; // no shadow on border
+        ctx.lineWidth = border;
+        ctx.strokeStyle = "#ffffff";
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius - border / 2, 0, Math.PI * 2);
+        ctx.stroke();
+
+        // Replace favicon
+        const favicon = document.querySelector('link[rel="icon"]');
+        if (favicon) {
+            favicon.href = canvas.toDataURL("image/png");
+        }
+    };
+}
+
+// Initialize
+const faviconLink = document.querySelector('link[rel="icon"]');
+if (faviconLink) {
+    makeFaviconStyled(faviconLink.getAttribute("href"));
+}
