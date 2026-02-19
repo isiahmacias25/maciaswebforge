@@ -80,7 +80,7 @@ footer {
 }
 
 /* Main Content of the Footer */
-.footer-Content {
+.footer-content {
     display: flex;
     justify-content: space-between; 
     align-items: center;
