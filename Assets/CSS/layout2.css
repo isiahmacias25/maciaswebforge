@@ -143,11 +143,11 @@ nav ul li a:hover {
 /* Logo Styles */
 /* Footer Logo */
 .footerLogo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ffffff;
+  border: 2.4px solid #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: inline-block; 
 }
