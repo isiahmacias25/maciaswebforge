@@ -13,17 +13,6 @@
   margin: 0 auto;
 }
 
-/* The Logo displayed on the index page */
-.indexLogo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-}
-
 /* The Button that allows users to explore the site */
 .exploreBtn {
   padding: 20px;
@@ -46,16 +35,4 @@
 }
 
 
-/* Home General Styles */
-/* The Logo displayed on the home page */
-.homeLogo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  margin-bottom: 10px;
-}
 
