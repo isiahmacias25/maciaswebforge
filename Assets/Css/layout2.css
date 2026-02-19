@@ -1,0 +1,150 @@
+/* Layout2 */
+
+
+/* Containers */
+/* Used to contain content and contrast "main" */
+.contentContainer {
+    background: rgb(255,255,255,0.6);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    margin: 0 auto;;
+}
+
+/* Temporary Container to show construction */
+.constructionContentContainer {
+    color: red;
+    background: rgb(255,255,255,1);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* Nav Styles */
+/* Wrapper of all navigation and buttons */
+nav {
+    display: table;
+    margin: 0 auto;
+    float: none;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+/* List that holds all navigation items */
+nav ul {
+    display: table-row;
+    margin: 0;
+}
+
+/* Individual navigation item (one per link) */
+nav ul li {
+    display: table-cell;
+    width: 15%;
+    text-align: center;
+    border: thin solid rgba(0, 255, 136, 0.5);
+    border-collapse: collapse;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* The Style of each individual link */
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+
+/* The Dynamic style when the button is hovered over */
+nav ul li a:hover {
+    background-color: #00ff88;
+    color: #000000;
+    box-shadow: 0 0 10px #00ff88;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* The Banner the Nav rests on */
+.navBanner {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 20px rgba(0, 255, 136, 0.3);
+    text-align: center;
+    overflow: visible;
+}
+
+/* The Left decorative circle attached to the banner */
+.navBanner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #000000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+/* The Right decorative circle attached to the banner */
+.navBanner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #000000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+/* The Navigation container inside the banner */
+.navBanner nav {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    table-layout: fixed;
+    background-color: #000000;
+}
+
+/* The List inside the banner navigation */
+.navBanner nav ul {
+    display: table-row;
+}
+
+/* The Navigation items inside the banner navigation */
+.navBanner nav ul li {
+    display: table-cell;
+    width: 15%;
+    text-align: center;
+    border: thin solid rgba(0, 255, 136, 0.5);
+    border-collapse: collapse;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* The Hover effect for links inside the banner navigation */
+.navBanner nav ul li a:hover {
+    background-color: #00ff88;
+    color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/*Other Global Styles: */
+.textBox {
+  padding: 20px;
+  border: 5px solid #ffffff;
+  background-color: #000000;
+  text-align: left;
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
