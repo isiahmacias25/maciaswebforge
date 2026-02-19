@@ -1,4 +1,6 @@
 /* All Packages Styled */
+
+/* The Collection container that holds all package tiles */
 .packageTileCollection {
   display: flex;
   gap: 20px;
@@ -7,11 +9,8 @@
   padding-bottom: 20px;
 }
 
-.ironPackageTile,
-.bronzePackageTile,
-.silverPackageTile,
-.customPackageTile,
-.comingSoonPackageTile {
+/* The Iron package tile */
+.ironPackageTile {
   border-radius: 20%;
   border: 5px solid #ffffff;
   width: 200px;
@@ -24,29 +23,116 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #8e8e8e;
 }
 
-.ironPackageTile { background-color: #8e8e8e; }
-.bronzePackageTile { background-color: #7c3d00; }
-.silverPackageTile { background-color: #3b3b3b; }
-.customPackageTile { background-color: #037339; }
-.comingSoonPackageTile { 
-  background-color: #d5d5d5; 
-  border: 10px solid #ffffff; 
+/* The Bronze package tile */
+.bronzePackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7c3d00;
+}
+
+/* The Silver package tile */
+.silverPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3b3b3b;
+}
+
+/* The Custom package tile */
+.customPackageTile {
+  border-radius: 20%;
+  border: 5px solid #ffffff;
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #037339;
+}
+
+/* The Coming Soon package tile */
+.comingSoonPackageTile {
+  border-radius: 20%;
+  border: 10px solid #ffffff;
+  width: 200px;
+  min-height: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d5d5d5;
   color: #000000;
 }
 
-.ironPackageTile p,
-.bronzePackageTile p,
-.silverPackageTile p,
-.customPackageTile p,
+/* The Paragraph text inside the Iron package tile */
+.ironPackageTile p {
+  margin: 8px 0;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* The Paragraph text inside the Bronze package tile */
+.bronzePackageTile p {
+  margin: 8px 0;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* The Paragraph text inside the Silver package tile */
+.silverPackageTile p {
+  margin: 8px 0;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* The Paragraph text inside the Custom package tile */
+.customPackageTile p {
+  margin: 8px 0;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+/* The Paragraph text inside the Coming Soon package tile */
 .comingSoonPackageTile p {
   margin: 8px 0;
   flex-shrink: 0;
   font-size: 14px;
 }
 
+
 /* Popup Styles */
+/* The Button that opens the modal popup */
 .viewMoreBtn {
   display: inline-block;
   margin: 10px 0 0 0;
@@ -59,28 +145,32 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* The Hover style for the modal button */
 .viewMoreBtn:hover {
   background-color: #666;
   transform: scale(1.05);
 }
 
+/* The Dark overlay behind the modal */
 .modalOverlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); 
-  display: none; 
-  justify-content: center; 
-  align-items: center;     
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
+/* The Active state of the modal overlay */
 .modalOverlay.active {
   display: flex;
 }
 
+/* The Modal popup container */
 .modal {
   border: 5px solid #ffffff;
   background-color: #000000;
@@ -94,9 +184,10 @@
   overflow-y: auto;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
   position: relative;
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
+/* The Close button in the modal */
 .closeModal {
   position: absolute;
   top: 12px;
@@ -108,6 +199,7 @@
   color: white;
 }
 
+/* The Title text inside the modal */
 #modalTitle {
   margin-top: 0;
   margin-bottom: 15px;
@@ -115,16 +207,18 @@
   text-align: center;
 }
 
+/* The Paragraph items inside the modal content */
 #modalContent p {
   position: relative;
-  padding-left: 20px; 
+  padding-left: 20px;
   text-align: left;
 }
 
+/* The Decorative dash before each modal list item */
 #modalContent p::before {
-  content: "–"; 
+  content: "–";
   position: absolute;
   left: 0;
-  color: white;  
+  color: white;
   font-weight: bold;
 }
