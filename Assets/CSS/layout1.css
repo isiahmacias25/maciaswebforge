@@ -97,17 +97,12 @@ footer {
     padding-top: 15px;
 }
 
-.footer-text {
+.footer-left {
   text-align: left;  /* keep the text aligned left */
 }
 
-.footer-logo {
+.footer-right {
   text-align: right; /* make sure logo hugs the right side */
-}
-
-.footer-logo img {
-  max-height: 100px;
-  width: auto;
 }
 
 /* keep your original text styles */
