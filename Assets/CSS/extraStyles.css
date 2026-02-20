@@ -59,7 +59,7 @@
 }
 
 /* Styling the links inside the Contact Options Container */
-contactOptionsContainer a {
+.contactOptionsContainer a {
   color: #add8e6; 
   text-decoration: underline;
   font-style: italic;
@@ -67,7 +67,7 @@ contactOptionsContainer a {
 }
 
 /* Styling the links inside the Contact Options Container once hovered over.*/
-contactOptionsContainer a:hover {
+.contactOptionsContainer a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
