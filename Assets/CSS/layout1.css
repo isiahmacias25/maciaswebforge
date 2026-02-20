@@ -90,14 +90,6 @@ footer {
     padding: 10px;
 }
 
-/* Our Shoutout at the Bottom */
-.footer-bottom {
-    text-align: center;
-    font-size: 14px;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
-}
-
 /* Left Side of the Main Content of the Footer */
 .footer-left {
   text-align: left;  
@@ -106,6 +98,28 @@ footer {
 /* Right Side of the Main Content of the Footer */
 .footer-right {
   text-align: right;
+}
+
+/* Our Shoutout at the Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+/* Styling the website link inside the footer */
+footer a {
+  color: #add8e6; 
+  text-decoration: underline;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+/* Styling the website link inside the footer once hovered over.*/
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* The Footer Title line */
