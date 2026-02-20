@@ -58,3 +58,17 @@
     text-align: right;    
 }
 
+/* Styling the links inside the Contact Options Container */
+contactOptionsContainer a {
+  color: #add8e6; 
+  text-decoration: underline;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+/* Styling the links inside the Contact Options Container once hovered over.*/
+contactOptionsContainer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
