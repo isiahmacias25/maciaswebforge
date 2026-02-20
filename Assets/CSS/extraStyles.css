@@ -1,38 +1,60 @@
 /* Styles for Index and Home */
 
-/* Index General Styles */
+
+/* Index Extra Styles */
 /* The Welcome content container on the index page */
 .welcomeContentContainer {
-  color: Black;
-  background: rgb(255,255,255,0.9);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 0 auto;
+    color: Black;
+    background: rgb(255,255,255,0.9);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* The Button that allows users to explore the site */
 .exploreBtn {
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  display: inline-block;
-  margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /* The Hover style for the explore button */
 .exploreBtn:hover {
-  background-color: #666;
-  transform: scale(1.05);
+    background-color: #666;
+    transform: scale(1.05);
 }
 
 
+/* Contact Extra Styles */
+/* Contains the cobtact methods in a spaced out invisible container */
+.contactOptionsContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 10px;
+}
+
+/* Keeps the left cotact option to the left */
+.leftContactOption {
+    text-align: right;    
+}
+
+/* Keeps the right cotact option to the right */
+.leftContactOption {
+    text-align: right;    
+}
 
