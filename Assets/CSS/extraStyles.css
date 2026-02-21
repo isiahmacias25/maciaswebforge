@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1000px;
 }
 
 /* Styling the links inside the Contact Options Container */
