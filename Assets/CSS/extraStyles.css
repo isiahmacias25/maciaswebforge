@@ -40,22 +40,8 @@
 /* Contains the cobtact methods in a spaced out invisible container */
 .contactOptionsContainer {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column;
     align-items: center;
-    max-width: 700px;
-    margin: 0 auto;
-    gap: 2rem;
-    padding: 10px;
-}
-
-/* Keeps the left cotact option to the left */
-.leftContactOption {
-    text-align: right;    
-}
-
-/* Keeps the right cotact option to the right */
-.rightContactOption {
-    text-align: right;    
 }
 
 /* Styling the links inside the Contact Options Container */
@@ -70,5 +56,9 @@
 .contactOptionsContainer a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.contactOptionsContainer .textBox {
+    max-width: 800px;
 }
 
