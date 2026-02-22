@@ -35,6 +35,37 @@
 }
 
 
+/* About Me Extra Styles */
+/* Main title section with headshot and breif intro */
+.heroSection {
+    display: flex;          
+    align-items: center;    
+    justify-content: space-between;
+    padding: 10px;
+} 
+
+/* Headshot Container */
+.headshotContainer {
+    flex: 0 0 250px;
+    width: 100%;
+    border-radius: 12px;   
+    object-fit: cover;
+}   
+
+/* My Story and My Plans for Macias Web Forge */
+.story-futureSection {
+    display: flex;          
+    align-items: center;    
+    justify-content: space-between;
+    padding: 10px;
+} 
+
+/* Extra Detals */
+.extrasSection {
+    padding: 10px;
+} 
+
+
 /* Contact Extra Styles */
 /* Contains the contact methods in an invisible container */
 .contactOptionsContainer {
