@@ -44,13 +44,19 @@
     padding: 10px;
 } 
 
-/* Headshot Container */
+/* Headshot container */
 .headshotContainer {
-    flex: 0 0 250px;
-    width: 100%;
-    border-radius: 12px;   
+    flex: 0 0 250px;    
+}
+
+/* The image inside Headshot container */
+.headshotContainer img {
+    width: 100%;          
+    height: auto;         
+    border-radius: 12px;
     object-fit: cover;
-}   
+    display: block;       
+}
 
 /* My Story and My Plans for Macias Web Forge */
 .story-futureSection {
