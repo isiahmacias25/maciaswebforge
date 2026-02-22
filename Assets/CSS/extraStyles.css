@@ -5,10 +5,9 @@
 /* The Welcome content container on the index page */
 .welcomeContentContainer {
     color: Black;
-    background: rgb(255,255,255,0.9);
+    background: rgba(255,255,255,0.9);
     padding: 20px;
     text-align: center;
-    margin-bottom: 50px;
     border-radius: 12px;
     max-width: 800px;
     margin: 0 auto;
@@ -37,26 +36,30 @@
 
 
 /* Contact Extra Styles */
-/* Contains the cobtact methods in a spaced out invisible container */
+/* Contains the contact methods in an invisible container */
 .contactOptionsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Styling the links inside the Contact Options Container */
 .contactOptionsContainer a {
-  color: #add8e6; 
-  text-decoration: underline;
-  font-style: italic;
-  transition: color 0.3s ease;
+    color: #add8e6; 
+    text-decoration: underline;
+    font-style: italic;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 /* Styling the links inside the Contact Options Container once hovered over.*/
 .contactOptionsContainer a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+    transform: scale(1.05);
+    background-color: #333;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 .contactOptionsContainer .textBox {
