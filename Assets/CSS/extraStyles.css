@@ -60,6 +60,13 @@
     display: block;       
 }
 
+/* Why Should you Choose Me? */
+.whySection {
+    padding: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+} 
+
 /* My Story and My Plans for Macias Web Forge */
 .story-futureSection {
     display: flex;          
