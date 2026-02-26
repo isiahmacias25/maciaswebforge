@@ -96,8 +96,11 @@ function closeModal() {
   modalOverlay.classList.remove("active");
 }
 
-document.querySelector(".myStory")
-  .addEventListener("click", () => openModal("myStory"));
+document.querySelectorAll("[data-package]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    openModal(btn.dataset.package);
+  });
+});
 
 
 // Close when clicking the X button
