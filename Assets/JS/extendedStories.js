@@ -96,8 +96,8 @@ function closeModal() {
   modalOverlay.classList.remove("active");
 }
 
-document.querySelector(".customPackageTile")
-  .addEventListener("click", () => openModal("custom"));
+document.querySelector(".myStory")
+  .addEventListener("click", () => openModal("myStory"));
 
 
 // Close when clicking the X button
