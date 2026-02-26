@@ -41,7 +41,6 @@
     display: flex;          
     align-items: center;    
     justify-content: space-between;
-    padding: 10px;
     max-width: 900px;
     margin: 40px auto;
 } 
@@ -62,7 +61,6 @@
 
 /* Why Should you Choose Me? */
 .whySection {
-    padding: 10px;
     max-width: 900px;
     margin: 40px auto;
 } 
@@ -72,14 +70,12 @@
     display: flex;          
     align-items: center;    
     justify-content: space-between;
-    padding: 10px;
     max-width: 900px;
     margin: 40px auto;
 } 
 
 /* Extra Details */
 .extrasSection {
-    padding: 10px;
     max-width: 900px;
     margin: 40px auto;
 } 
