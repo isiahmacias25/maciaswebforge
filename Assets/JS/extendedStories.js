@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const packageData = {
   
-  custom: {
+  myStory: {
     title: "My Story",
     content: `
       <p>
