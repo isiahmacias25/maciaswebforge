@@ -65,6 +65,15 @@ const packageData = {
             operate efficiently, and compete in an increasingly digital world.
       </p>
     `
+  },
+
+    myPlans: {
+    title: "My Plans for Macias Web Forge",
+    content: `
+      <p>
+          
+      </p>
+    `
   }
 };
 
