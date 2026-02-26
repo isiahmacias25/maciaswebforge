@@ -80,6 +80,16 @@
     margin: 40px auto;
 } 
 
+/* story-future Section specific styling for textboxes */
+.story-futureSection .textBox {
+    margin: 5px;
+}
+
+/* story-future Section specific styling for paragrapghs in textboxes */
+.story-futureSection .textBox p {
+    padding: 7px;
+}
+
 
 /* Contact Extra Styles */
 /* Contains the contact methods in an invisible container */
