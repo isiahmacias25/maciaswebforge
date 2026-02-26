@@ -1,0 +1,71 @@
+/* The Dark overlay behind the modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* The Active state of the modal overlay */
+.modalOverlay.active {
+    display: flex;
+}
+
+/* The Modal popup container */
+.modal {
+    border: 5px solid #ffffff;
+    background-color: #000000;
+    text-align: center;
+    margin: 10px;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: sans-serif;
+}
+
+/* The Close button in the modal */
+.closeModal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* The Title text inside the modal */
+#modalTitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* The Paragraph items inside the modal content */
+#modalContent p {
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* The Decorative dash before each modal list item */
+#modalContent p::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
