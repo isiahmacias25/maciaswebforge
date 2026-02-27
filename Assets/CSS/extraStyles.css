@@ -48,6 +48,19 @@
 /* Let the hero textbox height match the headhsop height */
 .heroSection .textBox {
     height: 340px;
+    position: relative; 
+    padding: 20px;
+}
+
+/* Baby logo in the heo section */
+.heroBabyLogo {
+    position: absolute;
+    bottom: 10px;
+    border-radius: 50%;
+    right: 10px;
+    width: 200px;      
+    opacity: 0.9; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Headshot container */
