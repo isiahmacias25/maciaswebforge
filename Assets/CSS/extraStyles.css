@@ -38,12 +38,16 @@
 /* About Me Extra Styles */
 /* Main title section with headshot and brief intro */
 .heroSection {
-    display: flex;          
-    align-items: center;    
+    display: flex;         
     justify-content: space-between;
     max-width: 900px;
     margin: 40px auto;
 } 
+
+/* Let the hero textbox height match the headhsop height */
+.heroSection .textBox {
+    height: 340px;
+}
 
 /* Headshot container */
 .headshotContainer {
