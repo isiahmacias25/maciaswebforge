@@ -45,17 +45,13 @@
     gap: 20px;
 } 
 
-/* Let the hero textbox height match the headhsop height */
-.heroSection .textBox {
-    height: 340px;
-    position: relative; 
-    padding: 20px;
-}
-
 /* TextBox padding and line spacing in Hero Section */
 .heroSection .textBox {
     padding: 20px;
     line-height: 1.6;
+    width: 900px;
+    height: 340px;
+    position: relative; 
 }
 
 /* Main heading spacing */
