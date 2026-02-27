@@ -41,17 +41,18 @@
     display: flex;         
     justify-content: space-between;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto; 
     gap: 20px;
 } 
 
 /* TextBox padding and line spacing in Hero Section */
 .heroSection .textBox {
-    padding: 20px;
+    padding: 15px; 
     line-height: 1.6;
     width: 900px;
-    height: 340px;
+    height: auto; 
     position: relative; 
+    margin-bottom: 0px;
 }
 
 /* Main heading spacing */
@@ -70,7 +71,7 @@
     margin-bottom: 12px;
 }
 
-/* Baby logo in the heo section */
+/* Baby logo in the hero section */
 .heroBabyLogo {
     position: absolute;
     bottom: 10px;
@@ -98,8 +99,13 @@
 /* Why Should you Choose Me? */
 .whySection {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto; 
 } 
+
+/* why Section specific styling for textboxes */
+.whySection .textBox {
+    margin-bottom: 0px;
+}
 
 /* My Story and My Plans for Macias Web Forge */
 .story-futureSection {
@@ -107,25 +113,20 @@
     align-items: stretch;  
     justify-content: space-between;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto; 
     gap: 20px;  
-} 
-
-/* Extra Details */
-.extrasSection {
-    max-width: 900px;
-    margin: 40px auto;
-} 
+}  
 
 /* story-future Section specific styling for textboxes */
 .story-futureSection .textBox {
     margin: 5px;
     flex: 1; 
+    margin-bottom: 0px;
 }
 
-/* story-future Section specific styling for paragrapghs in textboxes */
+/* story-future Section specific styling for paragraphs in textboxes */
 .story-futureSection .textBox p {
-    padding: 7px;
+    padding: 5px 0; 
 }
 
 
