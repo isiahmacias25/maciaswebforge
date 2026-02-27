@@ -68,10 +68,11 @@
 /* My Story and My Plans for Macias Web Forge */
 .story-futureSection {
     display: flex;          
-    align-items: center;    
+    align-items: stretch;  
     justify-content: space-between;
     max-width: 900px;
     margin: 40px auto;
+    gap: 20px;  
 } 
 
 /* Extra Details */
@@ -83,6 +84,7 @@
 /* story-future Section specific styling for textboxes */
 .story-futureSection .textBox {
     margin: 5px;
+    flex: 1; 
 }
 
 /* story-future Section specific styling for paragrapghs in textboxes */
