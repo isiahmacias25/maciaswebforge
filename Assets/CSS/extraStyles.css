@@ -36,6 +36,11 @@
 
 
 /* About Me Extra Styles */
+/* Override content container's size */
+.aboutMe {
+    width: 980px;
+}
+
 /* Main title section with headshot and brief intro */
 .heroSection {
     display: flex;         
