@@ -39,6 +39,10 @@
 /* Override content container's size */
 .aboutMe {
     width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 /* Main title section with headshot and brief intro */
