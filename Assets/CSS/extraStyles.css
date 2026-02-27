@@ -52,6 +52,28 @@
     padding: 20px;
 }
 
+/* TextBox padding and line spacing in Hero Section */
+.heroSection .textBox {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Main heading spacing */
+.heroSection .textBox h2 {
+    margin-bottom: 10px;
+}
+
+/* Subheading spacing and color */
+.heroSection .textBox h3 {
+    margin-bottom: 10px;
+    color: #c7c7ff;
+}
+
+/* Paragraph spacing in TextBox */
+.heroSection .textBox p {
+    margin-bottom: 12px;
+}
+
 /* Baby logo in the heo section */
 .heroBabyLogo {
     position: absolute;
