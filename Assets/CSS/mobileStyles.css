@@ -1,12 +1,19 @@
 /* Mobile Styles for all pages - unified file */
 
+
 /* Layout Adjustments */
-body, main {
+body {
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
     min-height: 100vh;
 }
+
+main {
+    margin: 0;
+    padding: 0.5rem;
+}
+
 
 /* Hero Section */
 .heroSection {
@@ -42,17 +49,13 @@ body, main {
     margin-bottom: 8px;
 }
 
-/* Hero Baby Logo */
-.heroBabyLogo {
-    width: 100px;
-    height: 100px;
-    bottom: 8px;
-    right: 8px;
-    position: absolute;
-    opacity: 0.9;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+/* Hide hero baby logo on phones */
+.heroBabyLogo
+{
+    display: none;
 }
+
 
 /* Headshot */
 .headshotContainer {
@@ -66,12 +69,14 @@ body, main {
     object-fit: cover;
 }
 
+
 /* Why Section */
 .whySection .textBox {
     width: 90%;
     margin: 12px auto;
     padding: 12px;
 }
+
 
 /* Story & Plans Section */
 .story-futureSection {
@@ -88,6 +93,7 @@ body, main {
     padding: 12px;
 }
 
+
 /* About Me container */
 .aboutMe {
     width: 100%;
@@ -102,6 +108,7 @@ body, main {
     margin: 0 auto;
     padding: 12px;
 }
+
 
 /* Nav adjustments */
 .navBanner {
@@ -145,6 +152,7 @@ body, main {
     box-shadow: none;
 }
 
+
 /* Footer */
 .footer-content {
     flex-direction: column;
@@ -163,6 +171,7 @@ body, main {
     height: 70px;
 }
 
+
 /* TextBoxes general */
 .textBox {
     width: 90%;
@@ -173,14 +182,18 @@ body, main {
     background-color: #000000;
 }
 
+
 /* Buttons */
-.readMoreBtn, .viewMoreBtn {
+.readMoreBtn,
+.viewMoreBtn {
     padding: 6px 10px;
     font-size: 0.85rem;
 }
 
+
 /* Small Screen Tweaks <400px */
 @media (max-width: 400px) {
+
     header h1 {
         font-size: 1.3rem;
     }
@@ -197,11 +210,6 @@ body, main {
         font-size: 0.8rem;
     }
 
-    .heroBabyLogo {
-        width: 90px;
-        height: 90px;
-    }
-
     .headshotContainer {
         width: 90%;
     }
@@ -212,7 +220,8 @@ body, main {
         padding: 10px;
     }
 
-    .readMoreBtn, .viewMoreBtn {
+    .readMoreBtn,
+    .viewMoreBtn {
         font-size: 0.8rem;
         padding: 5px 8px;
     }
@@ -240,4 +249,5 @@ body, main {
         width: 95%;
         padding: 10px;
     }
+
 }
