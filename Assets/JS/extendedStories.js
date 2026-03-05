@@ -51,18 +51,18 @@ const packageData = {
       </p>
 
       <p>
-            My interest in business developed much earlier. Growing up, 
-            I was fascinated by the professionalism, leadership, and 
-            vision associated with building organizations — the idea 
-            of creating something meaningful, leading others, and 
-            presenting oneself with purpose. That fascination never faded.
+          My interest in business developed much earlier. Growing up, 
+          I was fascinated by the professionalism, leadership, and 
+          vision associated with building organizations — the idea 
+          of creating something meaningful, leading others, and 
+          presenting oneself with purpose. That fascination never faded.
       </p>
 
       <p>
-            By combining my passion for technology with an equally strong 
-            interest in business, I founded Macias Web Forge to design modern, 
-            effective websites that help organizations communicate clearly, 
-            operate efficiently, and compete in an increasingly digital world.
+          By combining my passion for technology with an equally strong 
+          interest in business, I founded Macias Web Forge to design modern, 
+          effective websites that help organizations communicate clearly, 
+          operate efficiently, and compete in an increasingly digital world.
       </p>
     `
   },
