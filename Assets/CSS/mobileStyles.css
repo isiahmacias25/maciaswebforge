@@ -3,8 +3,9 @@
 /* Layout Adjustments */
 body, main {
     margin: 0;
-    padding: 0.5rem;
+    padding: 0;
     font-size: 0.9rem;
+    min-height: 100vh;
 }
 
 /* Hero Section */
@@ -12,41 +13,41 @@ body, main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     max-width: 95%;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .heroSection .textBox {
     width: 90%;
-    padding: 15px;
+    padding: 12px;
     margin-bottom: 0;
     position: relative;
     line-height: 1.5;
 }
 
 .heroSection .textBox h2 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
 }
 
 .heroSection .textBox h3 {
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #c7c7ff;
 }
 
 .heroSection .textBox p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
 }
 
 /* Hero Baby Logo */
 .heroBabyLogo {
-    width: 120px;
-    height: 120px;
-    bottom: 10px;
-    right: 10px;
+    width: 100px;
+    height: 100px;
+    bottom: 8px;
+    right: 8px;
     position: absolute;
     opacity: 0.9;
     border-radius: 50%;
@@ -68,23 +69,23 @@ body, main {
 /* Why Section */
 .whySection .textBox {
     width: 90%;
-    margin: 15px auto;
-    padding: 15px;
+    margin: 12px auto;
+    padding: 12px;
 }
 
 /* Story & Plans Section */
 .story-futureSection {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 95%;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .story-futureSection .textBox {
     width: 90%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 12px;
 }
 
 /* About Me container */
@@ -94,6 +95,12 @@ body, main {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+}
+
+.contentContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 12px;
 }
 
 /* Nav adjustments */
@@ -115,7 +122,7 @@ body, main {
 .navBanner nav ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     padding: 0;
 }
 
@@ -127,7 +134,7 @@ body, main {
 
 .navBanner nav ul li a {
     display: block;
-    padding: 10px 0;
+    padding: 8px 0;
     color: #ffffff;
 }
 
@@ -143,6 +150,7 @@ body, main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin: 0 auto;
 }
 
 .footer-left,
@@ -151,15 +159,15 @@ body, main {
 }
 
 .footerLogo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 /* TextBoxes general */
 .textBox {
     width: 90%;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 12px;
     border-radius: 12px;
     border: 5px solid #ffffff;
     background-color: #000000;
@@ -167,18 +175,18 @@ body, main {
 
 /* Buttons */
 .readMoreBtn, .viewMoreBtn {
-    padding: 8px 12px;
-    font-size: 0.9rem;
+    padding: 6px 10px;
+    font-size: 0.85rem;
 }
 
 /* Small Screen Tweaks <400px */
 @media (max-width: 400px) {
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .heroSection .textBox h2 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .heroSection .textBox h3 {
@@ -186,12 +194,12 @@ body, main {
     }
 
     .heroSection .textBox p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .heroBabyLogo {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 
     .headshotContainer {
@@ -205,8 +213,8 @@ body, main {
     }
 
     .readMoreBtn, .viewMoreBtn {
-        font-size: 0.85rem;
-        padding: 6px 10px;
+        font-size: 0.8rem;
+        padding: 5px 8px;
     }
 
     .navBanner {
@@ -215,16 +223,21 @@ body, main {
     }
 
     .navBanner nav ul li a {
-        padding: 8px 0;
+        padding: 6px 0;
     }
 
     main {
-        margin: 0.5rem;
+        margin: 0;
         padding: 0.5rem;
     }
 
     .textBox {
-        margin-bottom: 12px;
-        padding: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .contentContainer {
+        width: 95%;
+        padding: 10px;
     }
 }
