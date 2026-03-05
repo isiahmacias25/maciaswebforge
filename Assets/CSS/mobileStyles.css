@@ -1,54 +1,139 @@
-/****************************************************
- * MOBILE STYLES
- * ----------------------------------
- * Styles specifically for mobile devices
- * Adjusted widths, flex, fonts, and layout
- * to prevent breakage and improve readability.
- ****************************************************/
+/* ====================================================
+   MOBILE STYLES
+   ----------------------------------------------------
+   Styles specifically for small screens to prevent
+   overflow, scaling issues, and layout breaking.
+   ==================================================== */
 
 /* Layout1 */
-/* Stack package tiles vertically and center them */
-.packageTileCollection {
+/* Stack main sections vertically */
+.tripleTextSection,
+.importantStatements,
+.contactSection,
+.heroSection,
+.story-futureSection,
+.whySection {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
 
+/* Layout2 */
+/* Shrink all textBoxes for small screens */
+.textBox,
+.contactSection .textBox,
+.story-futureSection .textBox,
+.heroSection .textBox,
+.whySection .textBox {
+    width: 90%;
+    max-width: 320px;
+    padding: 10px;
+    margin: 0 auto 15px;
+}
+
+/* Layout2 */
+/* Shrink headings in hero, story, why sections */
+.heroSection .textBox h2,
+.story-futureSection .textBox h2,
+.whySection .textBox h2 {
+    font-size: 1.3rem;
+}
+
+.heroSection .textBox h3,
+.story-futureSection .textBox h3,
+.whySection .textBox h3 {
+    font-size: 1rem;
+}
+
+/* Layout2 */
+/* Shrink paragraph text in all sections */
+.heroSection .textBox p,
+.story-futureSection .textBox p,
+.whySection .textBox p,
+.contactSection .textBox p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Layout2 */
+/* Hero Baby Logo scaling */
+.heroBabyLogo {
+    width: 90px;
+    height: 90px;
+    bottom: 5px;
+    right: 5px;
+}
+
 /* Layout1 */
-/* Shrink package tiles for smaller screens */
+/* Headshot container and image scaling */
+.headshotContainer {
+    flex: 0 0 auto;
+    width: 70%;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.headshotContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Layout2 */
+/* Packages section scaling */
+.packageTileCollection {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
 .ironPackageTile,
 .bronzePackageTile,
 .silverPackageTile,
 .customPackageTile,
 .comingSoonPackageTile {
     width: 90%;
-    max-width: 250px;
-    padding: 15px;
-    margin: 0 auto 15px;
+    max-width: 300px;
+    min-height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 0.9rem;
 }
 
 /* Layout2 */
-/* Modal adjustments for mobile */
+/* Modals scaling */
 .modal {
     max-width: 90%;
-    max-height: 80%;
     padding: 20px;
-    margin: 10px;
+    max-height: 80%;
 }
 
-/* Layout2 */
-/* Scale modal title and content */
 #modalTitle {
     font-size: 1.5rem;
 }
 
 #modalContent p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding-left: 15px;
 }
 
 /* Layout2 */
-/* Scale logos for mobile */
+/* Contact section adjustments */
+.contactOptionsContainer .textBox {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+
+/* Layout1 */
+/* Footer stacking */
+.footer-content {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Layout2 */
+/* Logo resizing */
 .mainLogo {
     width: 150px;
     height: 150px;
@@ -58,298 +143,99 @@
     max-width: 100px;
 }
 
-/* Layout1 */
-/* Footer stack for mobile */
-.footer-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-}
-
-/* Extra Styles */
-/* TextBox font scaling */
-.textBox p {
-    font-size: 0.9rem;
-}
-
-/* Extra Styles */
-/* Scale header and section headings */
+/* Layout2 */
+/* Header adjustments */
 header h1 {
     font-size: 1.5rem;
 }
 
+/* Extra text adjustments */
 .ebffeb {
     font-size: 1.2rem;
+}
+
+.textBox p {
+    font-size: 0.9rem;
 }
 
 .tagline {
     font-size: 0.9rem;
 }
 
-/* Layout1 */
-/* Tiny screens < 400px adjustments */
+/* Tiny screens < 400px */
 @media (max-width: 400px) {
-    
+
     main {
-        padding: 0.5rem;
         margin: 0 0.5rem;
+        padding: 0.5rem;
     }
-    
+
     header h1 {
         font-size: 1.3rem;
     }
-    
+
     .ebffeb {
         font-size: 1rem;
     }
-    
-    .textBox p {
-        font-size: 0.8rem;
+
+    .textBox p,
+    #modalContent p {
+        font-size: 0.75rem;
     }
-    
+
     .tagline {
         font-size: 0.8rem;
     }
-    
-    /* Package tiles tweak for tiny screens */
+
+    .heroSection .textBox,
+    .story-futureSection .textBox,
+    .whySection .textBox,
+    .contactSection .textBox {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .heroSection .textBox h2,
+    .story-futureSection .textBox h2,
+    .whySection .textBox h2 {
+        font-size: 1.1rem;
+    }
+
+    .heroSection .textBox h3,
+    .story-futureSection .textBox h3,
+    .whySection .textBox h3 {
+        font-size: 0.9rem;
+    }
+
+    .heroBabyLogo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .headshotContainer {
+        max-width: 140px;
+    }
+
     .packageTileCollection {
         gap: 10px;
     }
-    
+
     .ironPackageTile,
     .bronzePackageTile,
     .silverPackageTile,
     .customPackageTile,
     .comingSoonPackageTile {
-        padding: 10px;
         max-width: 100%;
+        padding: 8px;
     }
-    
-    /* Contact boxes tweak for tiny screens */
-    .contactSection .textBox {
-        padding: 10px;
-        max-width: 100%;
-        margin: 0 auto 10px;
+
+    .modal {
+        padding: 15px;
     }
-    
-    /* Modal text tweaks */
+
     #modalTitle {
         font-size: 1.3rem;
     }
-    
-    #modalContent p {
-        font-size: 0.8rem;
-        padding-left: 10px;
-    }
-}
-/* ---------------------------------
-   MEDIA QUERY WRAPPER
-   ---------------------------------
-   All mobile-specific styles live here.
-   Target devices with max width of 600px.
-*/
-@media screen and (max-width: 600px) {
-
-
-  /* ---------------------------------
-     MODAL STYLING
-     ---------------------------------
-     Adjust modal for small screens.
-  */
-  .modal {
-    max-width: 90%;
-    width: 95%;
-    max-height: 90%;
-    padding: 15px 20px;
-  }
-
-  #modalTitle {
-    font-size: 18px;
-  }
-
-  #modalContent p {
-    padding-left: 15px;
-    font-size: 14px;
-  }
-
-  .closeModal {
-    font-size: 20px;
-  }
-
-
-  /* ---------------------------------
-     HERO SECTION
-     ---------------------------------
-     Make hero and textboxes stack vertically
-     instead of side by side.
-  */
-  .heroSection {
-    flex-direction: column;
-    max-width: 100%;
-    margin: 10px auto;
-    gap: 10px;
-  }
-
-  .heroSection .textBox {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .heroBabyLogo {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-  }
-
-  .headshotContainer {
-    flex: 0 0 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .headshotContainer img {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-
-
-  /* ---------------------------------
-     STORY / FUTURE SECTION
-     ---------------------------------
-     Stack textboxes vertically on small screens.
-  */
-  .story-futureSection {
-    flex-direction: column;
-    max-width: 100%;
-    gap: 10px;
-    margin: 10px auto;
-  }
-
-  .story-futureSection .textBox {
-    margin: 0;
-    padding: 10px;
-  }
-
-
-  /* ---------------------------------
-     WHY / ABOUT SECTION
-     ---------------------------------
-     Adjust width and spacing for small screens.
-  */
-  .whySection {
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 0 10px;
-  }
-
-  .whySection .textBox {
-    margin-bottom: 10px;
-  }
-
-
-  /* ---------------------------------
-     PACKAGE TILES
-     ---------------------------------
-     Stack tiles and shrink size for phones.
-  */
-  .packageTileCollection {
-    flex-direction: column;
-    gap: 15px;
-    padding-bottom: 10px;
-  }
-
-  .ironPackageTile,
-  .bronzePackageTile,
-  .silverPackageTile,
-  .customPackageTile,
-  .comingSoonPackageTile {
-    width: 90%;
-    min-height: auto;
-    padding: 10px;
-  }
-
-
-  /* ---------------------------------
-     FOOTER
-     ---------------------------------
-     Stack footer content vertically on small screens.
-  */
-  .footer-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-right {
-    text-align: center;
-  }
-
-  .footerLogo {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-  }
-
-
-  /* ---------------------------------
-     NAVIGATION
-     ---------------------------------
-     Make nav items stack vertically on phones.
-  */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .navBanner {
-    width: 95%;
-    padding: 0.5rem 1rem;
-  }
-
-  .navBanner::before,
-  .navBanner::after {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
-
-
-  /* ---------------------------------
-     INDEX / WELCOME CONTENT
-     ---------------------------------
-     Shrink container and logo on phones.
-  */
-  .welcomeContentContainer {
-    max-width: 95%;
-    padding: 15px;
-  }
-
-  .mainLogo {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 10px;
-  }
-
-  .exploreBtn {
-    font-size: 16px;
-    padding: 15px;
-    margin-top: 15px;
-  }
 
 }
