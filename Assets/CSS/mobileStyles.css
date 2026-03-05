@@ -1,74 +1,38 @@
-/* ====================================================
+/* ---------------------------------
    MOBILE STYLES
-   ----------------------------------------------------
-   Styles specifically for small screens to prevent
-   overflow, scaling issues, and layout breaking.
-   ==================================================== */
+   ---------------------------------
+   Adjustments for small screens (phones)
+   Stacks sections, scales text/images, and fixes spacing
+*/
 
-/* Layout1 */
-/* Stack main sections vertically */
-.tripleTextSection,
-.importantStatements,
-.contactSection,
+/* Layout: stack multi-column sections vertically */
 .heroSection,
 .story-futureSection,
-.whySection {
+.whySection,
+.contactOptionsContainer,
+.packageTileCollection {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
-/* Layout2 */
-/* Shrink all textBoxes for small screens */
-.textBox,
-.contactSection .textBox,
-.story-futureSection .textBox,
-.heroSection .textBox,
-.whySection .textBox {
-    width: 90%;
-    max-width: 320px;
+/* Hero Section adjustments */
+.heroSection {
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.heroSection .textBox {
+    width: 100%;
+    max-width: 100%;
     padding: 10px;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
 }
 
-/* Layout2 */
-/* Shrink headings in hero, story, why sections */
-.heroSection .textBox h2,
-.story-futureSection .textBox h2,
-.whySection .textBox h2 {
-    font-size: 1.3rem;
-}
-
-.heroSection .textBox h3,
-.story-futureSection .textBox h3,
-.whySection .textBox h3 {
-    font-size: 1rem;
-}
-
-/* Layout2 */
-/* Shrink paragraph text in all sections */
-.heroSection .textBox p,
-.story-futureSection .textBox p,
-.whySection .textBox p,
-.contactSection .textBox p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-}
-
-/* Layout2 */
-/* Hero Baby Logo scaling */
-.heroBabyLogo {
-    width: 90px;
-    height: 90px;
-    bottom: 5px;
-    right: 5px;
-}
-
-/* Layout1 */
-/* Headshot container and image scaling */
 .headshotContainer {
     flex: 0 0 auto;
-    width: 70%;
-    max-width: 180px;
+    width: 80%;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -78,12 +42,41 @@
     border-radius: 12px;
 }
 
-/* Layout2 */
-/* Packages section scaling */
+.heroBabyLogo {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 10px auto 0;
+    width: 120px;
+}
+
+/* Story & Future Section adjustments */
+.story-futureSection .textBox {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+
+.story-futureSection .textBox p {
+    padding: 3px 0;
+    font-size: 0.9rem;
+}
+
+/* Why Section adjustments */
+.whySection .textBox {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+
+/* Packages adjustments */
 .packageTileCollection {
-    flex-direction: column;
-    gap: 15px;
-    padding-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
 }
 
 .ironPackageTile,
@@ -91,20 +84,25 @@
 .silverPackageTile,
 .customPackageTile,
 .comingSoonPackageTile {
-    width: 90%;
-    max-width: 300px;
-    min-height: auto;
-    margin: 10px auto;
+    width: 150px;
+    min-height: 150px;
     padding: 10px;
-    font-size: 0.9rem;
 }
 
-/* Layout2 */
-/* Modals scaling */
+.ironPackageTile p,
+.bronzePackageTile p,
+.silverPackageTile p,
+.customPackageTile p,
+.comingSoonPackageTile p {
+    font-size: 0.8rem;
+}
+
+/* Modal adjustments */
 .modal {
     max-width: 90%;
-    padding: 20px;
-    max-height: 80%;
+    width: 90%;
+    padding: 15px 20px;
+    max-height: 85%;
 }
 
 #modalTitle {
@@ -112,75 +110,110 @@
 }
 
 #modalContent p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-left: 15px;
 }
 
-/* Layout2 */
-/* Contact section adjustments */
-.contactOptionsContainer .textBox {
-    width: 90%;
-    max-width: 300px;
-    padding: 10px;
-    margin: 0 auto 10px;
+/* Buttons */
+.viewMoreBtn,
+.readMoreBtn,
+.exploreBtn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
 }
 
-/* Layout1 */
-/* Footer stacking */
-.footer-content {
+/* Nav adjustments */
+nav,
+.navBanner nav {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* Layout2 */
-/* Logo resizing */
-.mainLogo {
-    width: 150px;
-    height: 150px;
+nav ul,
+.navBanner nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.footerLogo {
-    max-width: 100px;
+nav ul li,
+.navBanner nav ul li {
+    width: 100%;
+    border: none;
+    margin: 3px 0;
 }
 
-/* Layout2 */
+nav ul li a,
+.navBanner nav ul li a {
+    padding: 8px 0;
+    text-align: center;
+}
+
+/* Remove banner decorative circles */
+.navBanner::before,
+.navBanner::after {
+    display: none;
+}
+
+/* Main adjustments */
+main {
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
 /* Header adjustments */
 header h1 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
-/* Extra text adjustments */
-.ebffeb {
-    font-size: 1.2rem;
-}
-
+/* Text inside textBoxes */
 .textBox p {
     font-size: 0.9rem;
 }
 
+/* Logos */
+.mainLogo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+}
+
+.footerLogo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* Footer adjustments */
+.footer-content {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+/* Footer text scaling */
 .tagline {
     font-size: 0.9rem;
 }
 
-/* Tiny screens < 400px */
+/* Tiny screens <400px */
 @media (max-width: 400px) {
 
     main {
-        margin: 0 0.5rem;
         padding: 0.5rem;
+        margin: 0.25rem;
     }
 
     header h1 {
         font-size: 1.3rem;
     }
 
-    .ebffeb {
-        font-size: 1rem;
-    }
-
-    .textBox p,
-    #modalContent p {
-        font-size: 0.75rem;
+    .textBox p {
+        font-size: 0.8rem;
     }
 
     .tagline {
@@ -190,35 +223,22 @@ header h1 {
     .heroSection .textBox,
     .story-futureSection .textBox,
     .whySection .textBox,
-    .contactSection .textBox {
-        width: 100%;
-        max-width: 100%;
+    .contactOptionsContainer .textBox {
         padding: 8px;
     }
 
-    .heroSection .textBox h2,
-    .story-futureSection .textBox h2,
-    .whySection .textBox h2 {
-        font-size: 1.1rem;
-    }
-
-    .heroSection .textBox h3,
-    .story-futureSection .textBox h3,
-    .whySection .textBox h3 {
-        font-size: 0.9rem;
+    .headshotContainer {
+        width: 100%;
+        max-width: 200px;
     }
 
     .heroBabyLogo {
-        width: 70px;
-        height: 70px;
-    }
-
-    .headshotContainer {
-        max-width: 140px;
+        width: 100px;
+        margin: 5px auto 0;
     }
 
     .packageTileCollection {
-        gap: 10px;
+        gap: 5px;
     }
 
     .ironPackageTile,
@@ -226,16 +246,8 @@ header h1 {
     .silverPackageTile,
     .customPackageTile,
     .comingSoonPackageTile {
-        max-width: 100%;
+        width: 130px;
+        min-height: 130px;
         padding: 8px;
     }
-
-    .modal {
-        padding: 15px;
-    }
-
-    #modalTitle {
-        font-size: 1.3rem;
-    }
-
 }
