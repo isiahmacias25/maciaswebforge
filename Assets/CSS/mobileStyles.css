@@ -1,108 +1,110 @@
-/* ====================================
-   MOBILE STYLES FOR ABOUT ME PAGE
-   Target: max-width 600px (iPhone)
-   ==================================== */
+/* Mobile Styles for all pages - unified file */
 
 /* Layout Adjustments */
-/* Stack hero, why, and story sections vertically */
-.aboutMe .heroSection,
-.whySection,
-.story-futureSection {
+body, main {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.heroSection {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
-    width: 90%;
-    margin: 0 auto 20px auto;
-    padding: 0;
-}
-
-/* Hero Section TextBox */
-/* Shrink width, center content, reduce padding */
-.heroSection .textBox {
-    width: 100%;
     max-width: 95%;
-    padding: 10px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-/* Hero Section Headshot */
-/* Reduce size, center below text */
+.heroSection .textBox {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 1.5;
+}
+
+.heroSection .textBox h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.heroSection .textBox h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #c7c7ff;
+}
+
+.heroSection .textBox p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Hero Baby Logo */
+.heroBabyLogo {
+    width: 120px;
+    height: 120px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    opacity: 0.9;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Headshot */
 .headshotContainer {
     width: 80%;
-    max-width: 200px;
-    margin: 10px auto 20px auto;
-    flex: none;
 }
 
 .headshotContainer img {
     width: 100%;
     height: auto;
     border-radius: 12px;
+    object-fit: cover;
 }
 
-/* Hero Baby Logo */
-/* Scale down for mobile */
-.heroBabyLogo {
-    width: 80px;
-    height: 80px;
-    bottom: 5px;
-    right: 5px;
-}
-
-/* Why Section TextBox */
+/* Why Section */
 .whySection .textBox {
-    width: 100%;
-    max-width: 95%;
-    padding: 10px;
-    margin: 0 auto 15px auto;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
 }
 
-/* Story-Future Section TextBoxes */
+/* Story & Plans Section */
+.story-futureSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    margin: 20px auto;
+}
+
 .story-futureSection .textBox {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* About Me container */
+.aboutMe {
     width: 100%;
-    max-width: 95%;
-    padding: 10px;
-    margin: 0 auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
-/* Text Scaling */
-/* Headers and paragraph text */
-h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-}
-
-h3 {
-    font-size: 1rem;
-    margin-bottom: 6px;
-}
-
-.textBox p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 8px;
-}
-
-/* Read More Button */
-/* Keep small and clickable */
-.readMoreBtn {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    margin-top: 5px;
-}
-
-/* Navigation Adjustments */
-/* Stack links vertically and remove circles */
+/* Nav adjustments */
 .navBanner {
-    width: 100%;
-    margin: 10px auto;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
+    width: 95%;
+    padding: 0.5rem;
+    margin: 0 auto 15px;
+    background-color: #000000;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0,255,136,0.2);
 }
 
 .navBanner::before,
@@ -110,41 +112,37 @@ h3 {
     display: none;
 }
 
-.navBanner nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
 .navBanner nav ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 5px;
+    gap: 10px;
     padding: 0;
 }
 
 .navBanner nav ul li {
     display: block;
     width: 100%;
-    text-align: center;
-    border: none;
+    border: thin solid rgba(0,255,136,0.5);
 }
 
 .navBanner nav ul li a {
     display: block;
-    width: 100%;
     padding: 10px 0;
-    font-size: 0.95rem;
+    color: #ffffff;
 }
 
-/* Footer Adjustments */
-/* Stack left/right, shrink logos */
+.navBanner nav ul li a:hover {
+    background-color: #00ff88;
+    color: #000000;
+    transform: scale(1);
+    box-shadow: none;
+}
+
+/* Footer */
 .footer-content {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    text-align: center;
 }
 
 .footer-left,
@@ -152,78 +150,81 @@ h3 {
     text-align: center;
 }
 
-.mainLogo {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 10px auto;
-}
-
 .footerLogo {
-    max-width: 100px;
-    margin: 0 auto;
+    width: 80px;
+    height: 80px;
 }
 
-/* Containers */
-/* Reduce padding and margins to remove awkward space */
-.contentContainer,
+/* TextBoxes general */
 .textBox {
-    padding: 10px;
+    width: 90%;
+    padding: 15px;
     margin-bottom: 15px;
-    width: 95%;
-    max-width: 95%;
-    box-sizing: border-box;
+    border-radius: 12px;
+    border: 5px solid #ffffff;
+    background-color: #000000;
 }
 
-/* Main spacing */
-main {
-    padding: 1rem;
-    margin: 0 auto;
+/* Buttons */
+.readMoreBtn, .viewMoreBtn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
 }
 
-/* Footer Bottom */
-.footer-bottom {
-    font-size: 0.8rem;
-    padding: 10px 5px;
-    margin-top: 10px;
-}
-
-/* Tiny screens adjustments <400px */
+/* Small Screen Tweaks <400px */
 @media (max-width: 400px) {
-
-    h1 {
-        font-size: 1.3rem;
+    header h1 {
+        font-size: 1.5rem;
     }
 
-    h2 {
-        font-size: 1.2rem;
+    .heroSection .textBox h2 {
+        font-size: 1.1rem;
     }
 
-    h3 {
+    .heroSection .textBox h3 {
         font-size: 0.95rem;
     }
 
-    .textBox p {
-        font-size: 0.8rem;
-        line-height: 1.3;
+    .heroSection .textBox p {
+        font-size: 0.85rem;
     }
 
     .heroBabyLogo {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     .headshotContainer {
         width: 90%;
-        max-width: 180px;
+    }
+
+    .story-futureSection .textBox,
+    .whySection .textBox {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .readMoreBtn, .viewMoreBtn {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .navBanner {
+        width: 100%;
+        padding: 0.3rem;
     }
 
     .navBanner nav ul li a {
-        font-size: 0.85rem;
         padding: 8px 0;
     }
 
-    .readMoreBtn {
-        font-size: 0.75rem;
-        padding: 5px 10px;
+    main {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .textBox {
+        margin-bottom: 12px;
+        padding: 12px;
     }
 }
