@@ -3,34 +3,34 @@
 /* Container containg all websites */
 .portfolioContainer { 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%; 
-    max-width: 950px; 
     margin: 0 auto;
+    background-color: #ffffff;
     justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
 }
 
 /* Each website title */
 .portfolioTile {
-    background-color: #f8f9fa;
+    background-color: #000000;
     border-radius: 8px;
+    padding: 5px;
+    height: 170px;
     border: 2px solid #000; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* The Button that opens the modal popup */
-.viewMoreBtn {
-  display: inline-block;
-  margin: 10px 0 0 0;
-  padding: 8px 16px;
-  background-color: #444;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+/* Styling the links inside the Contact Options Container */
+.portfolioContainer a {
+    color: #add8e6; 
+    text-decoration: underline;
+    font-style: italic;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
