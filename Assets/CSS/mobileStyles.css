@@ -251,3 +251,86 @@ main {
     }
 
 }
+
+/* Portfolio Container */
+.portfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 12px;
+    padding: 12px;
+    margin: 8px;
+    justify-content: center;
+}
+
+/* Portfolio Tiles - flexible for small screens */
+.portfolioTile {
+    height: auto;
+    min-height: 220px; 
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Links inside container */
+.portfolioContainer a {
+    font-size: 15px; 
+    padding: 4px 0;
+    display: inline-block;
+}
+
+/* Logo spacing adjustments */
+.portfolioContainer .mainLogo {
+    margin: 4px 0;
+    max-width: 75%;
+    height: auto;
+}
+
+/* Modal Button adjustments for small screens */
+.viewMoreBtn {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 10px 18px;
+    font-size: 15px;
+    min-width: 100px;
+}
+
+/* Modal container tweaks */
+.modal {
+    padding: 15px;
+    max-width: 95%;
+    width: 95%;
+    max-height: 90%;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+/* Modal Title */
+#modalTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Modal Paragraph Content */
+#modalContent p {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Close button touch-friendly */
+.closeModal {
+    top: 8px;
+    right: 8px;
+    font-size: 24px;
+    padding: 6px;
+}
+
+/* Optional: touch feedback on tiles */
+.portfolioTile:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
